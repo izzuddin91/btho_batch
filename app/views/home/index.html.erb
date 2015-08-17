@@ -1,0 +1,55 @@
+<h1>welcome to our website</h1>
+<head>
+  <title>Bootstrap 3</title>
+  <meta name= "viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <div id = "myCarousel" class="carousel slide">
+    <ol class= "carousel-indicators">
+      <li data-target = "#myCarousel" data-slide-to= "0" class="active"></li>
+      <li data-target = "#myCarousel" data-slide-to= "1" ></li>
+      <li data-target = "#myCarousel" data-slide-to= "2" ></li>
+      <li data-target = "#myCarousel" data-slide-to= "3" ></li>
+    </ol>
+    <div class = "carousel-inner">
+      <div class= "item active">
+        <%= image_tag("3kualiti.jpg", alt: "tesla", class: "img-responsive")%>
+        <div class="carousel-caption" style="font:arial">
+          <h1 style= "margin-bottom: 180px;">BTHO BATCH</h1>
+        </div>
+      </div>
+
+      <div class= "item ">
+        <%= image_tag("reunion_alip.jpg", alt: "tesla", class: "img-responsive")%> 
+        <div class= "carousel-caption">
+<h3 style="margin-bottom: 230px;"></h3>
+        </div>      
+      </div>
+
+      <div class= "item ">
+        <%= image_tag("3kualiti2.jpg", alt: "tesla", class: "img-responsive")%>  
+        <div class= "carousel-caption">
+          <h1 style="margin-bottom: 130px;margin-left: 90px;"></h1>
+        </div>    
+
+      </div>
+
+      <div class= "item ">
+        <%= image_tag("btho2.jpg", alt: "tesla", class: "img-responsive")%> 
+        <div class= "carousel-caption">
+<h3 style="margin-bottom: 230px;margin-left: 0px;margin-right: 200px;"></h3>
+        </div>         
+      </div>
+    </div>
+
+
+    <a href="#myCarousel" class="carousel-control left" data-slide="prev">
+      <span class="icon-prev"></span>
+    </a>
+    <a href="#myCarousel" class="carousel-control right" data-slide="next">
+      <span class="icon-next"></span>
+    </a>
+  </div>
+</body>
