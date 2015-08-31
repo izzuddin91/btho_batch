@@ -12,13 +12,14 @@
 <nav class="navbar navbar-inverse">
 	<div id="user_nav">
     <ul><%= image_tag("bthobatch.png", style: "float:left;")%></ul>
+    <%= image_tag("make_donation.png", style: "height:45px; margin-top:15px; margin-left:225px;")%>
 		<% if user_signed_in? %>
 		Signed in as <%= current_user.email %>. Not you?
 			<%= link_to "Sign out", destroy_user_session_path, :method => :delete, style: "float:right;" %>
 		<% else %>
 
-		<%= link_to "Sign up", new_user_registration_path, style: "float:right;" %> 
-     <%= link_to "Sign in", new_user_session_path, style: "float:right;" %>
+		<%= link_to image_tag("sign_up.png", style: "margin-top:15px;"), new_user_registration_path, style: "float:right;" %> 
+     <%= link_to image_tag("sign_in.png", style: "margin-top:15px;margin-right:5px;"), new_user_session_path, style: "float:right;" %>
 		<%end%>
 	</div>
 </nav>
